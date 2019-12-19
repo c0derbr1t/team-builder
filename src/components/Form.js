@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 const Form = props => {
+    console.log("form props" + props);
     const[member, setMember] = useState({
         name: '',
         email: '',
@@ -21,7 +22,7 @@ const Form = props => {
     };
 
     return (
-        <form onSumbit={submitForm}>
+        <form onSubmit={submitForm}>
             <label htmlFor='name'>Name: </label>
             <input
                 id='name'
@@ -45,7 +46,7 @@ const Form = props => {
                 id='role'
                 name='role'
                 onChange={handleChanges}
-                value={member.role}
+                value={member.option}
                 >
                 <option>Project Manager</option>
                 <option>Front End Developer</option>
