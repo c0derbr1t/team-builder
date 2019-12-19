@@ -48,6 +48,7 @@ const Form = props => {
                 onChange={handleChanges}
                 value={member.option}
                 >
+                <option selected disabled hidden>Choose your Role:</option>
                 <option>Project Manager</option>
                 <option>Front End Developer</option>
                 <option>Back End Developer</option>
